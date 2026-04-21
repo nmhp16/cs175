@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">PaperMind</string>
+
+    <!-- Top bar -->
+    <string name="title_list">PaperMind</string>
+    <string name="title_add">Add document</string>
+    <string name="title_privacy">Privacy</string>
+
+    <!-- Actions -->
+    <string name="action_search">Search</string>
+    <string name="action_privacy">Privacy</string>
+    <string name="action_add">Add document</string>
+    <string name="action_send">Send</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_view_image">View image</string>
+    <string name="action_pick_image">Choose document</string>
+    <string name="action_pick_different">Pick a different document</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_close">Close</string>
+
+    <!-- List -->
+    <string name="search_hint">Search title or summary</string>
+    <string name="empty_title">No documents yet</string>
+    <string name="empty_body">Add a lease, a bill, or a lab result — everything stays on this device.</string>
+    <string name="empty_cta">Add your first document</string>
+    <string name="filter_all">All</string>
+    <string name="summary_pending">Summary pending…</string>
+    <string name="summary_missing">No summary available.</string>
+
+    <!-- Privacy tagline shown under the toolbar -->
+    <string name="privacy_badge">Fully offline. Nothing leaves this device.</string>
+
+    <!-- Model download -->
+    <string name="download_connecting">Connecting to model server…</string>
+    <string name="download_progress">Downloading model: %1$d%% (%2$s / %3$s)</string>
+    <string name="download_progress_unknown">Downloading model: %1$s</string>
+    <string name="download_complete">Model ready — preparing AI…</string>
+    <string name="download_failed">%1$s</string>
+    <string name="download_retry">Retry download</string>
+
+    <!-- Privacy screen -->
+    <string name="privacy_hero_title">Offline by design</string>
+    <string name="privacy_hero_body">After the initial model download, this app runs entirely on your device. No document or message ever leaves it.</string>
+    <string name="privacy_how_title">How your data stays private</string>
+    <string name="privacy_bullet_1">The model is downloaded once at install time. After that, the app makes no network calls.</string>
+    <string name="privacy_bullet_2">Documents, thumbnails, and chat history live only in this app\'s private storage.</string>
+    <string name="privacy_bullet_3">The AI runs entirely on-device via Google\'s LiteRT-LM runtime.</string>
+    <string name="privacy_bullet_4">Nothing is ever uploaded, backed up, or synced to the cloud.</string>
+    <string name="privacy_model_title">On-device model</string>
+    <string name="privacy_danger_title">Danger zone</string>
+    <string name="privacy_danger_body">Permanently delete all saved documents, images, and chat history. The AI model is kept — this only wipes your data.</string>
+    <string name="privacy_nuke">Delete all data</string>
+    <string name="privacy_wipe_confirm_title">Delete everything?</string>
+    <string name="privacy_wipe_confirm_body">This wipes every saved document, image, and chat turn. This cannot be undone.</string>
+    <string name="privacy_wipe_confirm_positive">Delete everything</string>
+    <string name="privacy_wiped_ok">All data has been wiped from this device.</string>
+
+    <!-- Add document -->
+    <string name="add_pick_hint">Pick an image or PDF of the document</string>
+    <string name="add_pick_sub">PDFs give the cleanest results (up to 10 pages)</string>
+    <string name="add_saving">Saving…</string>
+    <string name="add_analyzing">Analyzing document…</string>
+    <string name="add_detected_label">Detected</string>
+
+    <!-- Chat -->
+    <string name="chat_input_hint">Ask a question about this document</string>
+    <string name="chat_input_hint_thinking">Thinking…</string>
+    <string name="chat_status_loading">Preparing AI…</string>
+    <string name="chat_status_error">AI unavailable: %1$s</string>
+    <string name="chat_summary_label">Summary</string>
+    <string name="chat_not_ready">The on-device model isn\'t ready yet. Try again in a moment.</string>
+    <string name="chat_delete_title">Delete document?</string>
+    <string name="chat_delete_body">This document and its chat history will be permanently removed.</string>
+    <string name="chat_image_title">Document image</string>
+
+    <!-- Misc -->
+    <string name="copied">Copied</string>
+    <string name="backend_multimodal">Multimodal — reads documents directly</string>
+    <string name="backend_ocr">Text extracted via OCR</string>
+    <string name="backend_none">No model installed on this device</string>
+    <string name="model_size">%1$d MB on disk</string>
+</resources>

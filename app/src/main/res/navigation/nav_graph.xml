@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/documentListFragment">
+
+    <fragment
+        android:id="@+id/documentListFragment"
+        android:name="edu.sjsu.android.cs175.ui.list.DocumentListFragment"
+        android:label="@string/title_list">
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/addDocumentFragment" />
+        <action
+            android:id="@+id/action_list_to_chat"
+            app:destination="@id/documentChatFragment" />
+        <action
+            android:id="@+id/action_list_to_privacy"
+            app:destination="@id/privacyInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addDocumentFragment"
+        android:name="edu.sjsu.android.cs175.ui.add.AddDocumentFragment"
+        android:label="@string/title_add">
+        <action
+            android:id="@+id/action_add_to_chat"
+            app:destination="@id/documentChatFragment"
+            app:popUpTo="@id/documentListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/documentChatFragment"
+        android:name="edu.sjsu.android.cs175.ui.chat.DocumentChatFragment"
+        android:label="Chat">
+        <argument
+            android:name="documentId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/privacyInfoFragment"
+        android:name="edu.sjsu.android.cs175.ui.settings.PrivacyInfoFragment"
+        android:label="@string/title_privacy" />
+</navigation>
