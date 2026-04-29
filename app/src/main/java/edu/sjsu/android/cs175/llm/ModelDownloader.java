@@ -172,7 +172,7 @@ public class ModelDownloader {
             conn.setReadTimeout(0);
             conn.setRequestMethod("GET");
             conn.setInstanceFollowRedirects(true);
-            conn.setRequestProperty("User-Agent", "PaperMind/1.0 (Android)");
+            conn.setRequestProperty("User-Agent", "DocuMind/1.0 (Android)");
             if (existing > 0) {
                 conn.setRequestProperty("Range", "bytes=" + existing + "-");
             }

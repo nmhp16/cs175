@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">PaperMind</string>
+    <string name="app_name">DocuMind</string>
 
     <!-- Top bar -->
-    <string name="title_list">PaperMind</string>
+    <string name="title_list">DocuMind</string>
     <string name="title_add">Add document</string>
     <string name="title_privacy">Privacy</string>
 

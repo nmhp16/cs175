@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.PaperMind" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.DocuMind" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorOnPrimary">@color/on_primary</item>
         <item name="colorPrimaryContainer">@color/primary_container</item>
@@ -23,7 +23,7 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="Widget.PaperMind.CategoryPill" parent="Widget.Material3.Chip.Suggestion">
+    <style name="Widget.DocuMind.CategoryPill" parent="Widget.Material3.Chip.Suggestion">
         <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
     </style>
 

@@ -21,9 +21,9 @@ import edu.sjsu.android.cs175.llm.ModelDownloader;
  *      app never makes another network call.
  *   3. Initialize the LLM once the model is on disk.
  */
-public class PaperMindApp extends Application {
+public class DocuMindApp extends Application {
 
-    private static final String TAG = "PaperMindApp";
+    private static final String TAG = "DocuMindApp";
 
     private DocumentRepository repository;
     private LlmService llmService;
@@ -78,7 +78,7 @@ public class PaperMindApp extends Application {
     public ModelDownloader getModelDownloader() { return modelDownloader; }
 
     @Nullable
-    public static PaperMindApp from(android.content.Context ctx) {
-        return (PaperMindApp) ctx.getApplicationContext();
+    public static DocuMindApp from(android.content.Context ctx) {
+        return (DocuMindApp) ctx.getApplicationContext();
     }
 }

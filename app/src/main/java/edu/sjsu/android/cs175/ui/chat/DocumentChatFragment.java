@@ -306,7 +306,7 @@ public class DocumentChatFragment extends Fragment {
         ClipboardManager cm = (ClipboardManager)
                 requireContext().getSystemService(Context.CLIPBOARD_SERVICE);
         if (cm == null) return;
-        cm.setPrimaryClip(ClipData.newPlainText("PaperMind answer", msg.content));
+        cm.setPrimaryClip(ClipData.newPlainText("DocuMind answer", msg.content));
         Toast.makeText(requireContext(), R.string.copied, Toast.LENGTH_SHORT).show();
     }
 

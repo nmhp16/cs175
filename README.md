@@ -1,6 +1,6 @@
-# PaperMind
+# DocuMind
 
-On-device document Q&A for Android. Import a PDF or photo of a document, and PaperMind auto-classifies it (category + title + summary) and lets you chat with it — all running locally on the phone.
+On-device document Q&A for Android. Import a PDF or photo of a document, and DocuMind auto-classifies it (category + title + summary) and lets you chat with it — all running locally on the phone.
 
 ## How it works
 
@@ -13,7 +13,7 @@ On-device document Q&A for Android. Import a PDF or photo of a document, and Pap
 
 ```
 app/src/main/java/edu/sjsu/android/cs175/
-├── MainActivity.java, PaperMindApp.java
+├── MainActivity.java, DocuMindApp.java
 ├── llm/      — GemmaLlmService, ModelDownloader, Prompts
 ├── data/     — Room entities, DAOs, repositories
 ├── ui/       — add / chat / list / settings fragments
@@ -51,7 +51,7 @@ On a physical device, just make sure you have ~4 GB free before first launch.
 
 1. App opens and checks for the model file in internal storage.
 2. If missing, it downloads `gemma-4-E2B-it.litertlm` from the LiteRT community repo. This is the only time the app uses the network — the `INTERNET` permission exists solely for this step.
-3. Once downloaded, add a document (PDF or image) and PaperMind analyzes and opens it for chat.
+3. Once downloaded, add a document (PDF or image) and DocuMind analyzes and opens it for chat.
 
 ## Permissions
 

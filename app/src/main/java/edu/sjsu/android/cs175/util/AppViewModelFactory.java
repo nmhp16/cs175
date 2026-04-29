@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import edu.sjsu.android.cs175.PaperMindApp;
+import edu.sjsu.android.cs175.DocuMindApp;
 import edu.sjsu.android.cs175.ui.add.AddDocumentViewModel;
 import edu.sjsu.android.cs175.ui.chat.DocumentChatViewModel;
 import edu.sjsu.android.cs175.ui.list.DocumentListViewModel;
@@ -17,14 +17,14 @@ import edu.sjsu.android.cs175.ui.settings.PrivacyInfoViewModel;
  */
 public class AppViewModelFactory implements ViewModelProvider.Factory {
 
-    private final PaperMindApp app;
+    private final DocuMindApp app;
 
-    private AppViewModelFactory(PaperMindApp app) {
+    private AppViewModelFactory(DocuMindApp app) {
         this.app = app;
     }
 
     public static AppViewModelFactory from(Application application) {
-        return new AppViewModelFactory((PaperMindApp) application);
+        return new AppViewModelFactory((DocuMindApp) application);
     }
 
     @NonNull

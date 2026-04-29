@@ -20,7 +20,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.textfield.TextInputEditText;
 
-import edu.sjsu.android.cs175.PaperMindApp;
+import edu.sjsu.android.cs175.DocuMindApp;
 import edu.sjsu.android.cs175.R;
 import edu.sjsu.android.cs175.data.Category;
 import edu.sjsu.android.cs175.data.db.DocumentEntity;
@@ -97,7 +97,7 @@ public class DocumentListFragment extends Fragment {
     }
 
     private void observeModelDownload() {
-        PaperMindApp app = (PaperMindApp) requireActivity().getApplication();
+        DocuMindApp app = (DocuMindApp) requireActivity().getApplication();
         ModelDownloader downloader = app.getModelDownloader();
         if (downloader == null) return;
 

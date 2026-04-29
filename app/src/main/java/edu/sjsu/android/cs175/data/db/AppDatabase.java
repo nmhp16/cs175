@@ -13,7 +13,7 @@ import androidx.room.RoomDatabase;
 )
 public abstract class AppDatabase extends RoomDatabase {
 
-    private static final String DB_NAME = "papermind.db";
+    private static final String DB_NAME = "documind.db";
 
     public abstract DocumentDao documentDao();
 
